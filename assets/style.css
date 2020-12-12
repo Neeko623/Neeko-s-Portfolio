@@ -1,4 +1,7 @@
 
+* {
+  box-sizing: border-box;
+}
 /* brand color palette */
 :root {
   --primary: rgba(68, 88, 119, 1);
@@ -7,7 +10,9 @@
   --dark: rgba(28, 29, 33, 1);
   --light: rgba(238, 238, 247, 1);
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -37,7 +42,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: var(--primary);
+  background-color: var(--dark);
   text-decoration: 20px;
   align-items: center;
 }
@@ -79,14 +84,14 @@ nav a:hover {
 /*hero starts */
 
 .hero-banner {
-  background: var(--primary);
-  color: var(--light);
-  background-blend-mode: soft-light;
+  background: rgb(68, 88, 120);
   background-image: url("/Users/neekotang/dec13/image/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
-  background-position: center;
   background-size: cover;
-  max-height: 50vh;
-  padding: 80px;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  color: var(--light);
+  padding: 2% 6%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -106,7 +111,7 @@ nav a:hover {
 /* page section starts */
 
 .page-wrapper {
-  width: 90%;
+  max-width: 88%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -138,6 +143,7 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
+
 /* Display of Work */
 
 .grid-container {
@@ -165,40 +171,40 @@ nav a:hover {
   font-size: 0.9rem;
 }
 
+
 /* Work */
 
 .grid-item:first-child {
-    grid-column: span 8;
-    grid-row: span 2;
+  grid-column: span 8;
+  grid-row: span 2;
 }
 
 .grid-item:hover {
-  background-color: var(--primary);
+background-color: rgba(0, 0, 0, 0.3);
 }
 
 .grid-item div {
-  background-color: var(--secondary);
-  padding: 15px 60px;
+background-color: var(--secondary);
+padding: 8px 10px;
 }
 
 .grid-item h3 {
-  font-size: 1.6rem;
+font-size: 1.6rem;
 }
 
 /* Contact Information */
 
 .contact address {
-  display: flex-end;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   height: 100%;
-  padding: 20px;
 }
 
 .contact address a {
   color: var(--tertiary);
-  padding: 20px;
+  padding: 5px;
   text-decoration: none;
   font-size: 1.3rem;
   font-style: normal;
@@ -208,7 +214,7 @@ nav a:hover {
   background-position: bottom;
   transition: all 0.25s ease-in;
   margin: 0 0.2rem 0.1rem;
-  justify-content: space-between;
+  display: inline-block;
 }
 
 .contact address a:hover {
@@ -241,21 +247,20 @@ nav a:hover {
 
 @media screen and (max-width: 980px) {
   header {
-    padding: 0,10px;
+    padding: 0 0 10px 0;
     justify-content: center;
     text-align: center;
   }
 
   header h1 {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
     font-size: 10vw;
   }
 
   header nav {
     justify-content: center;
-    display: inline;
   }
 
   .page-section > h2,
@@ -276,7 +281,7 @@ nav a:hover {
 @media screen and (max-width: 768px) {
   .grid-item,
   .grid-item:first-child {
-    grid-column: 3 / -2;
+    grid-column: 1 / -1;
   }
 
   .grid-container {
@@ -289,8 +294,7 @@ nav a:hover {
   }
 
   .contact address {
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
