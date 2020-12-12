@@ -4,5 +4,6 @@ Navigation with corresponding function,present deployed application on the page,
 
 Visit here: https://neeko623.github.io/Portfolio-Website/
 
-/Users/neekotang/Desktop/Neeko-s-Portfolio.png
-/Users/neekotang/Desktop/Neeko-s-Portfolio2.png
+## Screenshots
+![Screeshot](/Users/neekotang/Desktop/Neeko-s-Portfolio.png)
+![Screeshot](/Users/neekotang/Desktop/Neeko-s-Portfolio2.png)
