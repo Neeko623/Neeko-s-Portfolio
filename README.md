@@ -6,5 +6,5 @@ responsive layout by using flexbox, CSS Grid Layout, media queries, and CSS vari
 Visit here: https://neeko623.github.io/Portfolio-Website/
 
 ## Screenshots
-![Screeshot](/Users/neekotang/Desktop/Neeko-s-Portfolio.png)
-![Screeshot](/Users/neekotang/Desktop/Neeko-s-Portfolio2.png)
+![Screeshot](/Users/neekotang/dec13/Neeko-s-Portfolio.png)
+![Screeshot](/Users/neekotang/dec13/Neeko-s-Portfolio2.png)
