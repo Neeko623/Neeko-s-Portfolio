@@ -6,3 +6,12 @@
   margin-right: auto;
   
 }
+
+.headline {
+  color: red;
+}
+
+.body-paragraph{
+  line-height: 30px;
+  
+}
